@@ -1,0 +1,93 @@
+{
+  "uid" : "b019ffdb463a08d8",
+  "name" : "test_delete_lesson[{\"action\":\"delete_course\",\"id\":\"123321\"}-{\"retcode\": 0}]",
+  "fullName" : "test_lesson.TestLesson#test_delete_lesson",
+  "historyId" : "36dd5bdc9b04e68aa6f171e860c55e85",
+  "time" : {
+    "start" : 1593414957795,
+    "stop" : 1593414957806,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1593414956926,
+      "stop" : 1593414957078,
+      "duration" : 152
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1593414958198,
+      "stop" : 1593414958198,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "Lesson"
+  }, {
+    "name" : "tag",
+    "value" : "lesson_delete"
+  }, {
+    "name" : "suite",
+    "value" : "test_lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "42316-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"action\":\"delete_course\",\"id\":\"123321\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 0}'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "lesson_delete", "Lesson" ]
+  },
+  "source" : "b019ffdb463a08d8.json",
+  "parameterValues" : [ "'{\"action\":\"delete_course\",\"id\":\"123321\"}'", "'{\"retcode\": 0}'" ]
+}

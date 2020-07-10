@@ -1,0 +1,95 @@
+{
+  "uid" : "406e4334cdcd29f8",
+  "name" : "test_list_lesson[{\"action\":\"list_course\",\"pagenum\":\"\",\"pagesize\":\"20\"}-{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 82, in handle_list_course\n    pagenum = int(request.param_dict['pagenum'])\nValueError: invalid literal for int() with base 10: ''\n\"}]",
+  "fullName" : "test_lesson.TestLesson#test_list_lesson[{\"action\":\"list_course\",\"pagenum\":\"\",\"pagesize\":\"20\"}-{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 82, in handle_list_course\n    pagenum = int(request.param_dict",
+  "historyId" : "3852acf712f587426ee78e090f1782aa",
+  "time" : {
+    "start" : 1593415176995,
+    "stop" : 1593415177002,
+    "duration" : 7
+  },
+  "status" : "broken",
+  "statusMessage" : "json.decoder.JSONDecodeError: Invalid control character at: line 1 column 63 (char 62)",
+  "statusTrace" : "self = <testcaseTech.test_lesson.TestLesson object at 0x00000269A7EEA2B0>\ninData = '{\"action\":\"list_course\",\"pagenum\":\"\",\"pagesize\":\"20\"}'\nrepsData = '{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\\n  File \"G:\\\\SQ资料区\\\\松勤自动化课程\\\\Web-API课程\\\\安装文件\\\\restapi-...urse\\n    pagenum = int(request.param_dict[\\'pagenum\\'])\\nValueError: invalid literal for int() with base 10: \\'\\'\\n\"}'\n\n    @pytest.mark.lesson_list\n    @pytest.mark.parametrize(\"inData,repsData\", get_excelData(\"2-课程模块\", 27, 38, 6, 8))\n    def test_list_lesson(self,inData,repsData):\n        res = LessonClass().list_lesson(self.session,inData)\n>       assert res[\"retcode\"] == json.loads(repsData)[\"retcode\"]\n\ntest_lesson.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nd:\\tools\\python\\lib\\json\\__init__.py:354: in loads\n    return _default_decoder.decode(s)\nd:\\tools\\python\\lib\\json\\decoder.py:339: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x00000269A6D683C8>\ns = '{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\\n  File \"G:\\\\SQ资料区\\\\松勤自动化课程\\\\Web-API课程\\\\安装文件\\\\restapi-...urse\\n    pagenum = int(request.param_dict[\\'pagenum\\'])\\nValueError: invalid literal for int() with base 10: \\'\\'\\n\"}'\nidx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n        a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        try:\n>           obj, end = self.scan_once(s, idx)\nE           json.decoder.JSONDecodeError: Invalid control character at: line 1 column 63 (char 62)\n\nd:\\tools\\python\\lib\\json\\decoder.py:355: JSONDecodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1593415176115,
+      "stop" : 1593415176253,
+      "duration" : 138
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1593415177486,
+      "stop" : 1593415177486,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "lesson_list"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson"
+  }, {
+    "name" : "suite",
+    "value" : "test_lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "20896-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"action\":\"list_course\",\"pagenum\":\"\",\"pagesize\":\"20\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 82, in handle_list_course\n    pagenum = int(request.param_dict['pagenum'])\nValueError: invalid literal for int() with base 10: ''\n\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "lesson_list", "Lesson" ]
+  },
+  "source" : "406e4334cdcd29f8.json",
+  "parameterValues" : [ "'{\"action\":\"list_course\",\"pagenum\":\"\",\"pagesize\":\"20\"}'", "'{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 82, in handle_list_course\n    pagenum = int(request.param_dict['pagenum'])\nValueError: invalid literal for int() with base 10: ''\n\"}'" ]
+}

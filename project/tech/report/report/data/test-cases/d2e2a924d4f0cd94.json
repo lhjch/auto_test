@@ -1,0 +1,184 @@
+{
+  "uid" : "d2e2a924d4f0cd94",
+  "name" : "新增课程用例",
+  "fullName" : "test_lesson.TestLesson#test_add_lesson",
+  "historyId" : "648c354b87c2b99c39ce5e7a6b9e3df9",
+  "time" : {
+    "start" : 1593504921007,
+    "stop" : 1593504921016,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1593504920701,
+      "stop" : 1593504920924,
+      "duration" : 223
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1593504922352,
+      "stop" : 1593504922353,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "课程模块"
+  }, {
+    "name" : "story",
+    "value" : "课程新增"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "lesson_add"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson"
+  }, {
+    "name" : "suite",
+    "value" : "test_lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "21932-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{ \"name\":\"大学英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 2, \"reason\": \"同名课程已经存在\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cff1fe46b34fcda9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593418450306,
+        "stop" : 1593418450315,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "e929523052870d32",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593418306614,
+        "stop" : 1593418306623,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "74a6cdd1049bd28e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593417605220,
+        "stop" : 1593417605229,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "ca41155589d8794",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593417057298,
+        "stop" : 1593417057306,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "17597b664deae78",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415176328,
+        "stop" : 1593415176336,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "ad647f0881c367a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415126510,
+        "stop" : 1593415126518,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "a9dc66ccbe72f51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415080693,
+        "stop" : 1593415080702,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "7460b73d3b8416a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415053630,
+        "stop" : 1593415053636,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "8b8654ba9e09631c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415004785,
+        "stop" : 1593415004794,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "9572f72e134bcc04",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593414957152,
+        "stop" : 1593414957160,
+        "duration" : 8
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "lesson_add", "Lesson" ]
+  },
+  "source" : "d2e2a924d4f0cd94.json",
+  "parameterValues" : [ "'{ \"name\":\"大学英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}'", "'{\"retcode\": 2, \"reason\": \"同名课程已经存在\"}'" ]
+}

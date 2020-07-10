@@ -1,0 +1,174 @@
+{
+  "uid" : "de12c252400c21ad",
+  "name" : "登陆接口用例",
+  "fullName" : "test_login#test_login",
+  "historyId" : "4649c7bf62f55a5cfcb811418ce30240",
+  "time" : {
+    "start" : 1593504922359,
+    "stop" : 1593504922542,
+    "duration" : 183
+  },
+  "description" : "这里是对登陆模块进行自动化测试",
+  "descriptionHtml" : "<p>这里是对登陆模块进行自动化测试</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登陆模块"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "登陆接口"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "21932-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expeData",
+    "value" : "'{\"retcode\": 0}'"
+  }, {
+    "name" : "inData",
+    "value" : "'{\"username\": \"auto\",\"password\": \"sdfsdfsdf\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "fa6f404ae6dbf713",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593504757427,
+        "stop" : 1593504757631,
+        "duration" : 204
+      }
+    }, {
+      "uid" : "117c3b9b2ece88f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593504412504,
+        "stop" : 1593504412725,
+        "duration" : 221
+      }
+    }, {
+      "uid" : "b8b350e3a5638927",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593504306447,
+        "stop" : 1593504306686,
+        "duration" : 239
+      }
+    }, {
+      "uid" : "adf1865353cf3119",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593418451318,
+        "stop" : 1593418451507,
+        "duration" : 189
+      }
+    }, {
+      "uid" : "c4f2990bfd4310af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593418307703,
+        "stop" : 1593418307846,
+        "duration" : 143
+      }
+    }, {
+      "uid" : "695e3878b299dd33",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593417606391,
+        "stop" : 1593417606596,
+        "duration" : 205
+      }
+    }, {
+      "uid" : "2572287f4c804dfd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593417058541,
+        "stop" : 1593417058674,
+        "duration" : 133
+      }
+    }, {
+      "uid" : "2a06f0867d2a0095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415177493,
+        "stop" : 1593415177598,
+        "duration" : 105
+      }
+    }, {
+      "uid" : "676959659ab98241",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415127496,
+        "stop" : 1593415127629,
+        "duration" : 133
+      }
+    }, {
+      "uid" : "7156affd496d384",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415081738,
+        "stop" : 1593415081876,
+        "duration" : 138
+      }
+    }, {
+      "uid" : "b87c3799b0d4953b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415054670,
+        "stop" : 1593415054880,
+        "duration" : 210
+      }
+    }, {
+      "uid" : "79b9acacfe35b5dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415005793,
+        "stop" : 1593415005921,
+        "duration" : 128
+      }
+    }, {
+      "uid" : "a6dc65c56112ceb5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593414958204,
+        "stop" : 1593414958333,
+        "duration" : 129
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "login" ]
+  },
+  "source" : "de12c252400c21ad.json",
+  "parameterValues" : [ "'{\"retcode\": 0}'", "'{\"username\": \"auto\",\"password\": \"sdfsdfsdf\"}'" ]
+}

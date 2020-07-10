@@ -1,0 +1,57 @@
+{
+  "uid" : "38bf1b95a4fb87ac",
+  "name" : "test_login[{\"username\": \"auto\",\"password\": \"\"}-{\n\"retcode\": 1,\n\"reason\": \"用户或者密码错误\"\n}]",
+  "fullName" : "test_login#test_login",
+  "historyId" : "650f81743f80193efab23e9067bbe60a",
+  "time" : {
+    "start" : 1593415006056,
+    "stop" : 1593415006202,
+    "duration" : 146
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "244-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expeData",
+    "value" : "'{\n\"retcode\": 1,\n\"reason\": \"用户或者密码错误\"\n}'"
+  }, {
+    "name" : "inData",
+    "value" : "'{\"username\": \"auto\",\"password\": \"\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "login" ]
+  },
+  "source" : "38bf1b95a4fb87ac.json",
+  "parameterValues" : [ "'{\n\"retcode\": 1,\n\"reason\": \"用户或者密码错误\"\n}'", "'{\"username\": \"auto\",\"password\": \"\"}'" ]
+}

@@ -1,0 +1,200 @@
+{
+  "uid" : "14568d837539822",
+  "name" : "列出课程用例",
+  "fullName" : "test_lesson.TestLesson#test_modify_lesson",
+  "historyId" : "35f43731ab21124f473c3b6b53743815",
+  "time" : {
+    "start" : 1593504922234,
+    "stop" : 1593504922234,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+  "statusTrace" : "self = <testcaseTech.test_lesson.TestLesson object at 0x0000021BD3EE89B0>\ninData = '{\"action\":\"modify_course\",\"id\":100,\"newdata\":\"\"\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}'\nrepsData = '{\"retcode\": 0}'\n\n    @allure.title(\"列出课程用例\")\n    @allure.story(\"修改课程\")\n    @pytest.mark.lesson_modify\n    @pytest.mark.parametrize(\"inData,repsData\", get_excelData(\"2-课程模块\", 47, 49, 6, 8))\n    def test_modify_lesson(self,inData,repsData):\n>       res = LessonClass().modify_course(self.session,inData)\n\ntest_lesson.py:49: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\Lib\\apiLessions.py:81: in modify_course\n    payload = json.loads(inData)\nd:\\tools\\python\\lib\\json\\__init__.py:354: in loads\n    return _default_decoder.decode(s)\nd:\\tools\\python\\lib\\json\\decoder.py:339: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x0000021BD2CC8390>\ns = '{\"action\":\"modify_course\",\"id\":100,\"newdata\":\"\"\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}', idx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n        a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        try:\n>           obj, end = self.scan_once(s, idx)\nE           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)\n\nd:\\tools\\python\\lib\\json\\decoder.py:355: JSONDecodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1593504920701,
+      "stop" : 1593504920924,
+      "duration" : 223
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1593504922352,
+      "stop" : 1593504922353,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "课程模块"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "修改课程"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson"
+  }, {
+    "name" : "tag",
+    "value" : "lesson_modify"
+  }, {
+    "name" : "suite",
+    "value" : "test_lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "21932-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"action\":\"modify_course\",\"id\":100,\"newdata\":\"\"\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 0}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8b6ba3b68923b789",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+      "time" : {
+        "start" : 1593418451213,
+        "stop" : 1593418451213,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d47c8dddbbe8af5b",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+      "time" : {
+        "start" : 1593418307575,
+        "stop" : 1593418307575,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3cb053aeb70178d",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+      "time" : {
+        "start" : 1593417606251,
+        "stop" : 1593417606251,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "19057e2468dc9d45",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+      "time" : {
+        "start" : 1593417058349,
+        "stop" : 1593417058349,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "88ccd4cff1c243a1",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+      "time" : {
+        "start" : 1593415177398,
+        "stop" : 1593415177398,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "497b4e3edfed5809",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+      "time" : {
+        "start" : 1593415127396,
+        "stop" : 1593415127396,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8cecce75ba8f39c8",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+      "time" : {
+        "start" : 1593415081634,
+        "stop" : 1593415081634,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "689d2d036f76a3a2",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+      "time" : {
+        "start" : 1593415054539,
+        "stop" : 1593415054539,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c88d4b009599cabe",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+      "time" : {
+        "start" : 1593415005696,
+        "stop" : 1593415005696,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "207579d29fd79fbc",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+      "time" : {
+        "start" : 1593414958117,
+        "stop" : 1593414958118,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "Lesson", "lesson_modify" ]
+  },
+  "source" : "14568d837539822.json",
+  "parameterValues" : [ "'{\"action\":\"modify_course\",\"id\":100,\"newdata\":\"\"\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}'", "'{\"retcode\": 0}'" ]
+}

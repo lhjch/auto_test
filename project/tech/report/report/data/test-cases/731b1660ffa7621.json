@@ -1,0 +1,95 @@
+{
+  "uid" : "731b1660ffa7621",
+  "name" : "test_add_lesson[{\"name\":\"大学英语008\",\"desc\":\"大学英语课程\",\"display_idx\":\"ab\"}\n-{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\lib\\\\common.py\\\", line 69, in dispatch\\n    return handler(request, *args, **kwargs)\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\apps\\\\mgr\\\\handlers\\\\mgr.py\\\", line 156, in handle_add_course\\n    return  JsonResponse(Course.add(data))\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\services\\\\datamodel\\\\common\\\\models.py\\\", line 86, in add\\n    display_idx=data['display_idx'])\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\manager.py\\\", line 82, in manager_method\\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\query.py\\\", line 417, in create\\n    obj.save(force_insert=True, using=self.db)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 729, in save\\n    force_update=force_update, update_fields=update_fields)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 759, in save_base\\n    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 842, in _save_table\\n    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 880, in _do_insert\\n    using=using, raw=raw)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\manager.py\\\", line 82, in manager_method\\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\query.py\\\", line 1125, in _insert\\n    return query.get_compiler(using=using).execute_sql(return_id)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1283, in execute_sql\\n    for sql, params in self.as_sql():\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1236, in as_sql\\n    for obj in self.query.objs\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1236, in <listcomp>\\n    for obj in self.query.objs\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1235, in <listcomp>\\n    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1175, in prepare_value\\n    value = field.get_db_prep_save(value, connection=self.connection)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\fields\\\\__init__.py\\\", line 767, in get_db_prep_save\\n    return self.get_db_prep_value(value, connection=connection, prepared=False)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\fields\\\\__init__.py\\\", line 762, in get_db_prep_value\\n    value = self.get_prep_value(value)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\fields\\\\__init__.py\\\", line 1826, in get_prep_value\\n    return int(value)\\nValueError: invalid literal for int() with base 10: ''\\n\"}]",
+  "fullName" : "test_lesson.TestLesson#test_add_lesson[{\"name\":\"大学英语008\",\"desc\":\"大学英语课程\",\"display_idx\":\"ab\"}\n-{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\lib\\\\common.py\\\", line 69, in dispatch\\n    return handler(request, *args, **kwargs)\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\apps\\\\mgr\\\\handlers\\\\mgr.py\\\", line 156, in handle_add_course\\n    return  JsonResponse(Course.add(data))\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\services\\\\datamodel\\\\common\\\\models.py\\\", line 86, in add\\n    display_idx=data['display_idx'])\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\manager.py\\\", line 82, in manager_method\\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\query.py\\\", line 417, in create\\n    obj.save(force_insert=True, using=self.db)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 729, in save\\n    force_update=force_update, update_fields=update_fields)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 759, in save_base\\n    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 842, in _save_table\\n    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 880, in _do_insert\\n    using=using, raw=raw)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\manager.py\\\", line 82, in manager_method\\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\query.py\\\", line 1125, in _insert\\n    return query.get_compiler(using=using).execute_sql(return_id)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1283, in execute_sql\\n    for sql, params in self.as_sql():\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1236, in as_sql\\n    for obj in self.query.objs\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1236, in <listcomp>\\n    for obj in self.query.objs\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1235, in <listcomp>\\n    ",
+  "historyId" : "faf2f161a05dc3352038cec9ec3602de",
+  "time" : {
+    "start" : 1593414957514,
+    "stop" : 1593414957519,
+    "duration" : 5
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 2 == 500",
+  "statusTrace" : "self = <testcaseTech.test_lesson.TestLesson object at 0x000002964000EC18>\ninData = '{\"name\":\"大学英语008\",\"desc\":\"大学英语课程\",\"display_idx\":\"ab\"}\\n'\nrepsData = '{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\\\\n  File \\\\\"G:\\\\\\\\SQ\\\\u8d44\\\\u6599\\\\u533a\\\\\\\\\\\\u677e\\\\..., line 1826, in get_prep_value\\\\n    return int(value)\\\\nValueError: invalid literal for int() with base 10: \\'\\'\\\\n\"}'\n\n    @pytest.mark.lesson_add\n    @pytest.mark.parametrize(\"inData,repsData\",get_excelData(\"2-课程模块\",2,26,6,8))\n    def test_add_lesson(self,inData,repsData):\n        #print(inData)\n        res = LessonClass().add_lesson(self.session,inData)\n>       assert res['retcode'] == json.loads(repsData)[\"retcode\"]\nE       assert 2 == 500\n\ntest_lesson.py:19: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1593414956926,
+      "stop" : 1593414957078,
+      "duration" : 152
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1593414958198,
+      "stop" : 1593414958198,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "lesson_add"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson"
+  }, {
+    "name" : "suite",
+    "value" : "test_lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "42316-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"name\":\"大学英语008\",\"desc\":\"大学英语课程\",\"display_idx\":\"ab\"}\n'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\lib\\\\common.py\\\", line 69, in dispatch\\n    return handler(request, *args, **kwargs)\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\apps\\\\mgr\\\\handlers\\\\mgr.py\\\", line 156, in handle_add_course\\n    return  JsonResponse(Course.add(data))\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\services\\\\datamodel\\\\common\\\\models.py\\\", line 86, in add\\n    display_idx=data['display_idx'])\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\manager.py\\\", line 82, in manager_method\\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\query.py\\\", line 417, in create\\n    obj.save(force_insert=True, using=self.db)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 729, in save\\n    force_update=force_update, update_fields=update_fields)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 759, in save_base\\n    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 842, in _save_table\\n    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 880, in _do_insert\\n    using=using, raw=raw)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\manager.py\\\", line 82, in manager_method\\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\query.py\\\", line 1125, in _insert\\n    return query.get_compiler(using=using).execute_sql(return_id)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1283, in execute_sql\\n    for sql, params in self.as_sql():\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1236, in as_sql\\n    for obj in self.query.objs\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1236, in <listcomp>\\n    for obj in self.query.objs\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1235, in <listcomp>\\n    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1175, in prepare_value\\n    value = field.get_db_prep_save(value, connection=self.connection)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\fields\\\\__init__.py\\\", line 767, in get_db_prep_save\\n    return self.get_db_prep_value(value, connection=connection, prepared=False)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\fields\\\\__init__.py\\\", line 762, in get_db_prep_value\\n    value = self.get_prep_value(value)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\fields\\\\__init__.py\\\", line 1826, in get_prep_value\\n    return int(value)\\nValueError: invalid literal for int() with base 10: ''\\n\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "lesson_add", "Lesson" ]
+  },
+  "source" : "731b1660ffa7621.json",
+  "parameterValues" : [ "'{\"name\":\"大学英语008\",\"desc\":\"大学英语课程\",\"display_idx\":\"ab\"}\n'", "'{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\lib\\\\common.py\\\", line 69, in dispatch\\n    return handler(request, *args, **kwargs)\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\apps\\\\mgr\\\\handlers\\\\mgr.py\\\", line 156, in handle_add_course\\n    return  JsonResponse(Course.add(data))\\n  File \\\"G:\\\\SQ\\u8d44\\u6599\\u533a\\\\\\u677e\\u52e4\\u81ea\\u52a8\\u5316\\u8bfe\\u7a0b\\\\Web-API\\u8bfe\\u7a0b\\\\\\u5b89\\u88c5\\u6587\\u4ef6\\\\restapi-teach\\\\backend\\\\services\\\\datamodel\\\\common\\\\models.py\\\", line 86, in add\\n    display_idx=data['display_idx'])\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\manager.py\\\", line 82, in manager_method\\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\query.py\\\", line 417, in create\\n    obj.save(force_insert=True, using=self.db)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 729, in save\\n    force_update=force_update, update_fields=update_fields)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 759, in save_base\\n    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 842, in _save_table\\n    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\base.py\\\", line 880, in _do_insert\\n    using=using, raw=raw)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\manager.py\\\", line 82, in manager_method\\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\query.py\\\", line 1125, in _insert\\n    return query.get_compiler(using=using).execute_sql(return_id)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1283, in execute_sql\\n    for sql, params in self.as_sql():\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1236, in as_sql\\n    for obj in self.query.objs\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1236, in <listcomp>\\n    for obj in self.query.objs\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1235, in <listcomp>\\n    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\sql\\\\compiler.py\\\", line 1175, in prepare_value\\n    value = field.get_db_prep_save(value, connection=self.connection)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\fields\\\\__init__.py\\\", line 767, in get_db_prep_save\\n    return self.get_db_prep_value(value, connection=connection, prepared=False)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\fields\\\\__init__.py\\\", line 762, in get_db_prep_value\\n    value = self.get_prep_value(value)\\n  File \\\"E:\\\\Python3.6.4-Tool\\\\lib\\\\site-packages\\\\django\\\\db\\\\models\\\\fields\\\\__init__.py\\\", line 1826, in get_prep_value\\n    return int(value)\\nValueError: invalid literal for int() with base 10: ''\\n\"}'" ]
+}

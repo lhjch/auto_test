@@ -1,0 +1,95 @@
+{
+  "uid" : "83184fd42ae96713",
+  "name" : "test_modify_lesson[{\"action\":\"modify_course\",\"id\":\"abc\",\"newdata\":\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}-{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 198, in handle_modify_course\n    return  JsonResponse(Course.modify(request.param_dict['id'],newData))\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\services\\datamodel\\common\\models.py\", line 100, in modify\n    Course.objects.filter(id=rid)\\\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\manager.py\", line 82, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\query.py\", line 836, in filter\n    return self._filter_or_exclude(False, *args, **kwargs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\query.py\", line 854, in _filter_or_exclude\n    clone.query.add_q(Q(*args, **kwargs))\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1253, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1277, in _add_q\n    split_subq=split_subq,\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1215, in build_filter\n    condition = self.build_lookup(lookups, col, value)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1085, in build_lookup\n    lookup = lookup_class(lhs, rhs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\lookups.py\", line 18, in __init__\n    self.rhs = self.get_prep_lookup()\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\lookups.py\", line 68, in get_prep_lookup\n    return self.lhs.output_field.get_prep_value(self.rhs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\fields\\__init__.py\", line 947, in get_prep_value\n    return int(value)\nValueError: invalid literal for int() with base 10: 'abc'\n\"}\n]",
+  "fullName" : "test_lesson.TestLesson#test_modify_lesson[{\"action\":\"modify_course\",\"id\":\"abc\",\"newdata\":\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}-{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 198, in handle_modify_course\n    return  JsonResponse(Course.modify(request.param_dict",
+  "historyId" : "157ccb102956b52def7552ee7bc3aee8",
+  "time" : {
+    "start" : 1593415054580,
+    "stop" : 1593415054581,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 52 (char 51)",
+  "statusTrace" : "self = <testcaseTech.test_lesson.TestLesson object at 0x000002952BA9C9B0>\ninData = '{\"action\":\"modify_course\",\"id\":\"abc\",\"newdata\":\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}'\nrepsData = '{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\\n  File \"G:\\\\SQ资料区\\\\松勤自动化课程\\\\Web-API课程\\\\安装文件\\\\restapi-... line 947, in get_prep_value\\n    return int(value)\\nValueError: invalid literal for int() with base 10: \\'abc\\'\\n\"}\\n'\n\n    @pytest.mark.lesson_modify\n    @pytest.mark.parametrize(\"inData,repsData\", get_excelData(\"2-课程模块\", 47, 49, 6, 8))\n    def test_modify_lesson(self,inData,repsData):\n>       res = LessonClass().modify_course(self.session,inData)\n\ntest_lesson.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\Lib\\apiLessions.py:81: in modify_course\n    payload = json.loads(inData)\nd:\\tools\\python\\lib\\json\\__init__.py:354: in loads\n    return _default_decoder.decode(s)\nd:\\tools\\python\\lib\\json\\decoder.py:339: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x000002952A9383C8>\ns = '{\"action\":\"modify_course\",\"id\":\"abc\",\"newdata\":\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}', idx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n        a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        try:\n>           obj, end = self.scan_once(s, idx)\nE           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 52 (char 51)\n\nd:\\tools\\python\\lib\\json\\decoder.py:355: JSONDecodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1593415053305,
+      "stop" : 1593415053557,
+      "duration" : 252
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1593415054665,
+      "stop" : 1593415054665,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "lesson_modify"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson"
+  }, {
+    "name" : "suite",
+    "value" : "test_lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "38476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"action\":\"modify_course\",\"id\":\"abc\",\"newdata\":\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 198, in handle_modify_course\n    return  JsonResponse(Course.modify(request.param_dict['id'],newData))\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\services\\datamodel\\common\\models.py\", line 100, in modify\n    Course.objects.filter(id=rid)\\\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\manager.py\", line 82, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\query.py\", line 836, in filter\n    return self._filter_or_exclude(False, *args, **kwargs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\query.py\", line 854, in _filter_or_exclude\n    clone.query.add_q(Q(*args, **kwargs))\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1253, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1277, in _add_q\n    split_subq=split_subq,\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1215, in build_filter\n    condition = self.build_lookup(lookups, col, value)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1085, in build_lookup\n    lookup = lookup_class(lhs, rhs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\lookups.py\", line 18, in __init__\n    self.rhs = self.get_prep_lookup()\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\lookups.py\", line 68, in get_prep_lookup\n    return self.lhs.output_field.get_prep_value(self.rhs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\fields\\__init__.py\", line 947, in get_prep_value\n    return int(value)\nValueError: invalid literal for int() with base 10: 'abc'\n\"}\n'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "Lesson", "lesson_modify" ]
+  },
+  "source" : "83184fd42ae96713.json",
+  "parameterValues" : [ "'{\"action\":\"modify_course\",\"id\":\"abc\",\"newdata\":\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}'", "'{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 198, in handle_modify_course\n    return  JsonResponse(Course.modify(request.param_dict['id'],newData))\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\services\\datamodel\\common\\models.py\", line 100, in modify\n    Course.objects.filter(id=rid)\\\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\manager.py\", line 82, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\query.py\", line 836, in filter\n    return self._filter_or_exclude(False, *args, **kwargs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\query.py\", line 854, in _filter_or_exclude\n    clone.query.add_q(Q(*args, **kwargs))\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1253, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1277, in _add_q\n    split_subq=split_subq,\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1215, in build_filter\n    condition = self.build_lookup(lookups, col, value)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1085, in build_lookup\n    lookup = lookup_class(lhs, rhs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\lookups.py\", line 18, in __init__\n    self.rhs = self.get_prep_lookup()\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\lookups.py\", line 68, in get_prep_lookup\n    return self.lhs.output_field.get_prep_value(self.rhs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\fields\\__init__.py\", line 947, in get_prep_value\n    return int(value)\nValueError: invalid literal for int() with base 10: 'abc'\n\"}\n'" ]
+}

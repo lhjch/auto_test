@@ -1,0 +1,184 @@
+{
+  "uid" : "e8c95819da194913",
+  "name" : "列出课程用例",
+  "fullName" : "test_lesson.TestLesson#test_list_lesson[{\"action\":\"list_course\",\"pagenum\":\"1\",\"pagesize\":\"20\"}-{\"retcode\": 0, \"retlist\": ",
+  "historyId" : "3711293414b09f43efefaef4edc5b832",
+  "time" : {
+    "start" : 1593504921742,
+    "stop" : 1593504921752,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1593504920701,
+      "stop" : 1593504920924,
+      "duration" : 223
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1593504922352,
+      "stop" : 1593504922353,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "课程模块"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "列出课程"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson"
+  }, {
+    "name" : "tag",
+    "value" : "lesson_list"
+  }, {
+    "name" : "suite",
+    "value" : "test_lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "21932-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"action\":\"list_course\",\"pagenum\":\"1\",\"pagesize\":\"20\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 0, \"retlist\": [{\"id\": 1287, \"name\": \"大学英语\", \"desc\": \"大学英语课程\", \"display_idx\": 4}], \"total\": 1}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "89fb90feb0297fca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593418450948,
+        "stop" : 1593418450956,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "564478f2c69d8d94",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593418307280,
+        "stop" : 1593418307290,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "9d7ce0c4382fea22",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593417605875,
+        "stop" : 1593417605883,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "31f6420ed75b4264",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593417057994,
+        "stop" : 1593417058005,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "52afd7a46aab8a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415176979,
+        "stop" : 1593415176989,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "830dc87a5178449e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415127127,
+        "stop" : 1593415127134,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "2405aa2174717c99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415081352,
+        "stop" : 1593415081360,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "9958f275b5f81eba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415054262,
+        "stop" : 1593415054270,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "57d74d6ec040e9d9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593415005413,
+        "stop" : 1593415005420,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "1bd65b09ffa9e0f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593414957813,
+        "stop" : 1593414957820,
+        "duration" : 7
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "lesson_list", "Lesson" ]
+  },
+  "source" : "e8c95819da194913.json",
+  "parameterValues" : [ "'{\"action\":\"list_course\",\"pagenum\":\"1\",\"pagesize\":\"20\"}'", "'{\"retcode\": 0, \"retlist\": [{\"id\": 1287, \"name\": \"大学英语\", \"desc\": \"大学英语课程\", \"display_idx\": 4}], \"total\": 1}'" ]
+}

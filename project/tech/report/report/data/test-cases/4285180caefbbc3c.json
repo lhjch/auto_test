@@ -1,0 +1,200 @@
+{
+  "uid" : "4285180caefbbc3c",
+  "name" : "新增课程用例",
+  "fullName" : "test_lesson.TestLesson#test_add_lesson",
+  "historyId" : "42b07d9ab769b049441c557c29282608",
+  "time" : {
+    "start" : 1593504921345,
+    "stop" : 1593504921351,
+    "duration" : 6
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 2 == 0",
+  "statusTrace" : "self = <testcaseTech.test_lesson.TestLesson object at 0x0000021BD3E061D0>\ninData = '{\"name\":\" 大学英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}\\n', repsData = '{\"retcode\": 0, \"id\": 1302}'\n\n    @allure.title(\"新增课程用例\")\n    @allure.story(\"课程新增\")\n    @pytest.mark.lesson_add\n    @pytest.mark.parametrize(\"inData,repsData\",get_excelData(\"2-课程模块\",2,26,6,8))\n    def test_add_lesson(self,inData,repsData):\n        #print(inData)\n        res = LessonClass().add_lesson(self.session,inData)\n>       assert res['retcode'] == json.loads(repsData)[\"retcode\"]\nE       assert 2 == 0\n\ntest_lesson.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1593504920701,
+      "stop" : 1593504920924,
+      "duration" : 223
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1593504922352,
+      "stop" : 1593504922353,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "课程模块"
+  }, {
+    "name" : "story",
+    "value" : "课程新增"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "lesson_add"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson"
+  }, {
+    "name" : "suite",
+    "value" : "test_lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "21932-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"name\":\" 大学英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}\n'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 0, \"id\": 1302}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5877b8c504908c4a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2 == 0",
+      "time" : {
+        "start" : 1593418450619,
+        "stop" : 1593418450625,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "91a1ebe7dfd698cd",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2 == 0",
+      "time" : {
+        "start" : 1593418306929,
+        "stop" : 1593418306934,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "5c93cf354a594540",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2 == 0",
+      "time" : {
+        "start" : 1593417605534,
+        "stop" : 1593417605540,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "a2b14be2d9b792fa",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2 == 0",
+      "time" : {
+        "start" : 1593417057604,
+        "stop" : 1593417057611,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "77565f3f1f40e9fe",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2 == 0",
+      "time" : {
+        "start" : 1593415176619,
+        "stop" : 1593415176624,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "9634afbf3a3d055a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2 == 0",
+      "time" : {
+        "start" : 1593415126817,
+        "stop" : 1593415126824,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "10c9dd9a75ab546f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2 == 0",
+      "time" : {
+        "start" : 1593415080997,
+        "stop" : 1593415081004,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "4964da4900620344",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2 == 0",
+      "time" : {
+        "start" : 1593415053927,
+        "stop" : 1593415053933,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "41bd759a0fea2b69",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2 == 0",
+      "time" : {
+        "start" : 1593415005101,
+        "stop" : 1593415005106,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "840d77bec1659582",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2 == 0",
+      "time" : {
+        "start" : 1593414957465,
+        "stop" : 1593414957471,
+        "duration" : 6
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "lesson_add", "Lesson" ]
+  },
+  "source" : "4285180caefbbc3c.json",
+  "parameterValues" : [ "'{\"name\":\" 大学英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}\n'", "'{\"retcode\": 0, \"id\": 1302}'" ]
+}

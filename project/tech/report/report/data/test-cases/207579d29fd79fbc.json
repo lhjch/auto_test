@@ -1,0 +1,95 @@
+{
+  "uid" : "207579d29fd79fbc",
+  "name" : "test_modify_lesson[{\"action\":\"modify_course\",\"id\":100,\"newdata\":\"\"\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}-{\"retcode\": 0}]",
+  "fullName" : "test_lesson.TestLesson#test_modify_lesson",
+  "historyId" : "35f43731ab21124f473c3b6b53743815",
+  "time" : {
+    "start" : 1593414958117,
+    "stop" : 1593414958118,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)",
+  "statusTrace" : "self = <testcaseTech.test_lesson.TestLesson object at 0x000002964002D8D0>\ninData = '{\"action\":\"modify_course\",\"id\":100,\"newdata\":\"\"\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}'\nrepsData = '{\"retcode\": 0}'\n\n    @pytest.mark.lesson_modify\n    @pytest.mark.parametrize(\"inData,repsData\", get_excelData(\"2-课程模块\", 47, 49, 6, 8))\n    def test_modify_lesson(self,inData,repsData):\n>       res = LessonClass().modify_course(self.session,inData)\n\ntest_lesson.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\Lib\\apiLessions.py:81: in modify_course\n    payload = json.loads(inData)\nd:\\tools\\python\\lib\\json\\__init__.py:354: in loads\n    return _default_decoder.decode(s)\nd:\\tools\\python\\lib\\json\\decoder.py:339: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x000002963EEA8358>\ns = '{\"action\":\"modify_course\",\"id\":100,\"newdata\":\"\"\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}', idx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n        a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        try:\n>           obj, end = self.scan_once(s, idx)\nE           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 48 (char 47)\n\nd:\\tools\\python\\lib\\json\\decoder.py:355: JSONDecodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1593414956926,
+      "stop" : 1593414957078,
+      "duration" : 152
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1593414958198,
+      "stop" : 1593414958198,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "lesson_modify"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson"
+  }, {
+    "name" : "suite",
+    "value" : "test_lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "42316-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"action\":\"modify_course\",\"id\":100,\"newdata\":\"\"\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 0}'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "Lesson", "lesson_modify" ]
+  },
+  "source" : "207579d29fd79fbc.json",
+  "parameterValues" : [ "'{\"action\":\"modify_course\",\"id\":100,\"newdata\":\"\"\"{ \"name\":\"松勤\",\"desc\":\"心田老师课程\",\"display_idx\":\"5\"}\"\"\"}'", "'{\"retcode\": 0}'" ]
+}

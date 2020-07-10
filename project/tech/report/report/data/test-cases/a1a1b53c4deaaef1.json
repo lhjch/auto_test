@@ -1,0 +1,65 @@
+{
+  "uid" : "a1a1b53c4deaaef1",
+  "name" : "登陆接口用例",
+  "fullName" : "test_login#test_login",
+  "historyId" : "e085af8f48f9875c350811d2832b876b",
+  "time" : {
+    "start" : 1593417606602,
+    "stop" : 1593417606778,
+    "duration" : 176
+  },
+  "description" : "这里是对登陆模块进行自动化测试",
+  "descriptionHtml" : "<p>这里是对登陆模块进行自动化测试</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登陆模块"
+  }, {
+    "name" : "story",
+    "value" : "登陆接口"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "36036-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expeData",
+    "value" : "'{\n\"retcode\": 1,\n\"reason\": \"用户或者密码错误\"\n}'"
+  }, {
+    "name" : "inData",
+    "value" : "'{\"username\": \"\",\"password\": \"sdfsdfsdf\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "login" ]
+  },
+  "source" : "a1a1b53c4deaaef1.json",
+  "parameterValues" : [ "'{\n\"retcode\": 1,\n\"reason\": \"用户或者密码错误\"\n}'", "'{\"username\": \"\",\"password\": \"sdfsdfsdf\"}'" ]
+}

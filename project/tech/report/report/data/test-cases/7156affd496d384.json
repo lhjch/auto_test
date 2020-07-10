@@ -1,0 +1,57 @@
+{
+  "uid" : "7156affd496d384",
+  "name" : "test_login[{\"username\": \"auto\",\"password\": \"sdfsdfsdf\"}-{\"retcode\": 0}]",
+  "fullName" : "test_login#test_login",
+  "historyId" : "4649c7bf62f55a5cfcb811418ce30240",
+  "time" : {
+    "start" : 1593415081738,
+    "stop" : 1593415081876,
+    "duration" : 138
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-56FBIJE"
+  }, {
+    "name" : "thread",
+    "value" : "45864-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expeData",
+    "value" : "'{\"retcode\": 0}'"
+  }, {
+    "name" : "inData",
+    "value" : "'{\"username\": \"auto\",\"password\": \"sdfsdfsdf\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "login" ]
+  },
+  "source" : "7156affd496d384.json",
+  "parameterValues" : [ "'{\"retcode\": 0}'", "'{\"username\": \"auto\",\"password\": \"sdfsdfsdf\"}'" ]
+}
