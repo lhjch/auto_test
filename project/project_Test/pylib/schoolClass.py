@@ -80,25 +80,37 @@ class schoolClass:
 
     #修改班级
     def modifyClass(self,classid,name,studentlimit):
+        """
+        :param classid:
+        :param name:
+        :param studentlimit:
+        :return:
+        """
         header = {"Content-Type":"application/x-www-form-urlencoded"}
-        data = {"vcode":vcode,"action":"modify","name":name,"studentlimit":studentlimit}
+        data = {"vcode":vcode,"action":"modify","name":name,"studentlimit":int(studentlimit)}#此处最好转一下 rf传递进行来的是字符串格式
         res = requests.put("{}/{}".format(url,classid),headers=header,data=data,proxies=proxies)
-
+        pprint(res.json(),indent=2)#最好打印一下 方便出错时查看日志
         return res.json()
 
-    def iscontained(self,list1,list2):
-        list1conut = len(list1)
-        list2count = len(list2)
+    def compareLength(self,list1,list2):
+        # list1conut = len(list1)
+        # list2count = len(list2)
+        #
+        # if((list1conut-list2count) != 1):
+        #     raise Exception("异常发生  删除班级失败")
 
-        if((list1conut-list2count) != 1):
-            raise Exception("异常发生  删除班级失败")
+        assert (len(list1)-len(list2))==1
 
     def testModify(self,allclass,classId,newName,newStudentlimit):
         #allclass为一个列表 列表元素为字典格式
         for cl in allclass:
             if cl["id"]==classId:
+                print(cl['name'],newName)
+                print(cl['studentlimit'],newStudentlimit)
+                print(type(cl['studentlimit']),type(newStudentlimit))
                 assert cl["name"]==newName
-                assert cl["studentlimit"]==newStudentlimit
+                #rf传递的数字是字符串格式
+                assert cl["studentlimit"]==int(newStudentlimit)
 
 
 if __name__ == "__main__":

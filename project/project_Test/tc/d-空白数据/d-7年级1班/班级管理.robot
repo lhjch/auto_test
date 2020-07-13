@@ -5,6 +5,7 @@ Library  pylib.schoolClass
 *** Test Cases ***
 
 添加班级1-tc000002
+    [Documentation]  添加不同名班级
      ${addRet}   insertClass  1   2班   60
      #建议使用should be true 后面直接跟python 表达式
      should be true  $addRet['retcode']==0
@@ -24,8 +25,8 @@ Library  pylib.schoolClass
      [Teardown]  deleteClass  &{addRet}[id]
 
 
-添加班级1-tc000003
-
+添加班级2-tc000003
+     [Documentation]  添加已经存在的班级
      ${listRet1}  listClass  1
      #evaluate后面跟python表达式
      ${fc1}  evaluate  $listRet1["retlist"]
@@ -40,26 +41,91 @@ Library  pylib.schoolClass
      should be true  $fc1==$fc2
 
 修改班级1-tc000051
+    [Documentation]  修改id存在的班级并且不同名
      #先插入一个新的班级 不影响原来的班级
      ${addRet}   insertClass  1   2班   60
+     #最好检查一下
+     should be true  $addRet['retcode']==0
+     #后面需要多次用到id 将它赋值给一个变量
+     ${classid}   evaluate   $addRet["id"]
      #修改2班名称为3班
-     ${modifyRet}  modifyClass  &{addRet}[id]  3班  50
+     ${modifyRet}  modifyClass  ${classid}  3班  50
      #第一次断言
-     should be true  $modifyRet['id']==0
+     should be true  $modifyRet['retcode']==0
      #第二次断言
      ${listRet}  listClass  1
-     testModify   &{listRet}[retlist]  3班  50
+     testModify   &{listRet}[retlist]  ${classid}  3班  50
 
-     [Teardown]  deleteClass  &{addRet}[id]
+     [Teardown]  deleteClass  ${classid}
 
 
 修改班级2-tc000052
+    [Documentation]  修改同名班级
+     #先插入一个新的班级 不影响原来的班级
+     ${addRet}   insertClass  1   2班   60
+     #最好检查一下
+     should be true  $addRet['retcode']==0
+     #修改2班名称为3班
+     ${modifyRet}  modifyClass  &{addRet}[id]  1班  50
+     #第一次断言 若该语句出现错误 后面的语句不会执行 但是teardown会执行
+     should be true  $modifyRet['retcode']==10000
+     #第二次断言
+     ${listRet}  listClass  1
+     testModify   &{listRet}[retlist]  &{addRet}[id]  2班  60
+
+     [Teardown]  deleteClass  &{addRet}[id]
 
 修改班级3-tc000053
+     [Documentation]  修改Id不存在的班级
+     ${listRet1}  listClass  1
+     #evaluate后面跟python表达式
+     ${fc1}  evaluate  $listRet1["retlist"]
+
+     ${modifyRet}  modifyClass  666666666666  1班  50
+     should be true  $modifyRet['retcode']==404
+
+     ${listRet2}  listClass  1
+     #evaluate后面跟python表达式
+     ${fc2}  evaluate  $listRet2["retlist"]
+
+     should be true  $fc1==$fc2
 
 删除班级1-tc000081
+     [Documentation]  删除id不存在的班级
+     ${listRet1}  listClass  1
+     #evaluate后面跟python表达式
+     ${fc1}  evaluate  $listRet1["retlist"]
+
+     ${deleteRet}  deleteClass  66666666
+     should be true  $deleteRet['retcode']==404
+
+     ${listRet2}  listClass  1
+     #evaluate后面跟python表达式
+     ${fc2}  evaluate  $listRet2["retlist"]
+
+     should be true  $fc1==$fc2
+
 
 删除班级2-tc000082
+    [Documentation]  删除ID存在的班级
+     #先插入一个新的班级 不影响原来的班级
+     ${addRet}   insertClass  1   2班   60
+     #最好检查一下
+     should be true  $addRet['retcode']==0
+      ${listRet1}  listClass  1
+     #evaluate后面跟python表达式
+     ${fc1}  evaluate  $listRet1["retlist"]
+
+     #删除班级
+     ${deleteRet}  deleteClass  &{addRet}[id]
+     should be true  $deleteRet["retcode"]==0
+
+     ${listRet2}  listClass  1
+     #evaluate后面跟python表达式
+     ${fc2}  evaluate  $listRet2["retlist"]
+
+     compareLength   ${fc1}     ${fc2}
+
 
 
 
